@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resume"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="143dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ScrollView
+        android:id="@+id/techSkillsScrollView"
+        android:layout_width="460dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/techSkillsHeading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/machineLearning"
+                style="@style/myTextView"
+                android:text="@string/machine_learning"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/Iot"
+                style="@style/myTextView"
+                android:text="@string/internet_of_things"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/cloud"
+                style="@style/myTextView"
+                android:text="@string/cloud_computing"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/java"
+                style="@style/myTextView"
+                android:text="@string/java"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/c"
+                style="@style/myTextView"
+                android:text="@string/c"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/python"
+                style="@style/myTextView"
+                android:text="@string/python"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/perl"
+                style="@style/myTextView"
+                android:text="@string/perl"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/haskell"
+                style="@style/myTextView"
+                android:text="@string/haskell"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/c_hash"
+                style="@style/myTextView"
+                android:text="@string/cS"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/css"
+                style="@style/myTextView"
+                android:text="@string/css"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/ruby"
+                style="@style/myTextView"
+                android:text="@string/ruby"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/html"
+                style="@style/myTextView"
+                android:text="@string/html"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/javascript"
+                style="@style/myTextView"
+                android:text="@string/javascript"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/php"
+                style="@style/myTextView"
+                android:text="@string/php"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/k_vamsi_krishna_reddy"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/degree"
+        app:layout_constraintEnd_toEndOf="@+id/degree"
+        app:layout_constraintStart_toStartOf="@+id/degree"
+        app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/techSkillsHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/technical_skills"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/techSkillsScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btech_cse"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/collegeName"
+        app:layout_constraintEnd_toEndOf="@+id/collegeName"
+        app:layout_constraintStart_toStartOf="@+id/collegeName"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/collegeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/amrita_vishwa_vidyapeetham"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

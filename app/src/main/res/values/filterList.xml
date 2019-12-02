@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filterList">
+        <item>Aerial</item>
+        <item>Low Light</item>
+        <item>Nature</item>
+        <item>Portrait</item>
+        <item>Wildlife</item>
+        <item>Others</item>
+    </string-array>
+</resources>
